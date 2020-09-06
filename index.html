@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="right">
+    <img src="./images/bg-top.svg" alt="">
+  </div>
+  <div class="left">
+    <img src="./images/bg-bottom.svg" alt="">
+  </div>
+  <header>
+    <h2>Our Pricing</h2>
+    <div class="choose">
+      <h5>Annually</h5>
+      <div class="toggle"></div>
+      <h5>Monthly</h5>
+    </div>
+  </header>
+  
+  
+  <main>
+
+    <div class="card">
+      
+        <h4>Basic</h4>
+        <h1 class="monthly"><span>&dollar;</span>19.99</h1>
+        <h1 class="annually"><span>&dollar;</span>199.99</h1>
+      
+      <p>500 GB Storage</p>
+      <p>2 Users Allowed</p>
+      <p class="send">Send up to 3 GB</p>
+      <button class="btn">Learn More</button>
+    </div>
+
+    <div class="card card-blue">
+      
+        <h4>Professional</h4>
+        <h1 class="monthly"><span>&dollar;</span>24.99</h1>
+        <h1 class="annually"><span>&dollar;</span>249.99</h1>
+      
+      <p>1 TB Storage</p>
+      <p>5 Users Allowed</p>
+      <p class="send">Send up to 10 GB</p>
+      <button class="btn white-btn">Learn More</button>
+    </div>
+
+    <div class="card">
+      
+        <h4>Master</h4>
+        <h1 class="monthly"><span>&dollar;</span>39.99</h1>
+        <h1 class="annually"><span>&dollar;</span>399.99</h1>
+      
+      <p>2 TB Storage</p>
+      <p>10 Users Allowed</p>
+      <p class="send">Send up to 20 GB</p>
+      <button class="btn">Learn More</button>
+    </div>
+
+  </main>
+
+  
+ 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.monthly').hide();
+      $('.toggle').on('click', () => {
+        $('.toggle').toggleClass('active');
+        $('.monthly').toggle();
+        $('.annually').toggle();
+        
+      })
+
+    })
+  </script>
+</body>
+</html>
